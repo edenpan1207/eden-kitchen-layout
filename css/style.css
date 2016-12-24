@@ -60,16 +60,20 @@ img {
   margin: 0 auto;
 }
 .header {
-    height: 420px;
+    padding: 0 0 50px 0;
     background-image: url(../images/header_desktop.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-.parallax {
+    background-size: 100% 70%;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    clear: both;
+}
+
+/* RWD 768px*/
+@media(max-width:768px) {
+  .header {
+    background-attachment: initial;
+    background-size: 100% 100%;
+  }
 }
 /*RWD:568px*/
 @media(max-width:568px) {
@@ -77,8 +81,6 @@ img {
     background-image: url(../images/header_mobile.png);
   }
 }
-
-
 
 /*topmenu*/
 .topmenu {
@@ -508,15 +510,8 @@ img {
   box-shadow: 0px 2px 12px gray;
 }
 
-/* RWD:768px*/
-@media(max-width:768px){
-  .footer {
-    padding-bottom: 25%;
-  }
-}
-
-/*RWD:710px footer斷點防止跑版*/
-@media(max-width:710px) {
+/*RWD:768px*/
+@media(max-width:768px) {
   .footer {
     padding-bottom: 150px;
   }
@@ -528,5 +523,11 @@ img {
     float: none;
     width: 100%;
     margin-bottom: 40px;
+  }
+}
+/*RWD:320px*/
+@media(max-width:320px) {
+  .footer {
+    padding-bottom: 180px;
   }
 }
