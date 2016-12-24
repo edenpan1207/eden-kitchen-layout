@@ -63,15 +63,21 @@ img {
     height: 420px;
     background-image: url(../images/header_desktop.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    /*background-size: 100% 100%;*/
 }
-
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
 /*RWD:568px*/
 @media(max-width:568px) {
   .header {
     background-image: url(../images/header_mobile.png);
   }
 }
+
+
 
 /*topmenu*/
 .topmenu {
