@@ -17,15 +17,14 @@ $(document).ready(function() {
     });
 
     /* sectionMove  is scroll move to target */
-    $('.sectionMove').on('click', function(e) {
-        e.preventDefault();
-        var hookStr = $(this).attr('href');
-        var top = $(hookStr).offset().top;
+    $('.sectionMove').click(function(event) {
+        event.preventDefault();
+        var connect = $(this).attr('href');
+        var position = $(connect).offset().top;
         $('body').animate({
-            scrollTop: top
-        }, 700);
+            scrollTop: position}, 700);
     });
-    
+
 
     /* click hamburger open-menu*/
     $('.fa-bars').on('click', function(e) {
