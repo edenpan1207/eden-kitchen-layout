@@ -16,16 +16,16 @@ $(document).ready(function() {
         $('html,body').animate({ scrollTop: 0 }, 700);
     });
 
-    /* sectionMoveA、B、C is scroll move to target */
-    $('.sectionMoveC').click(function() {
-        $('html,body').animate({ scrollTop: 1900 }, 700);
+    /* sectionMove  is scroll move to target */
+    $('.sectionMove').on('click', function(e) {
+        e.preventDefault();
+        var hookStr = $(this).attr('href');
+        var top = $(hookStr).offset().top;
+        $('body').animate({
+            scrollTop: top
+        }, 700);
     });
-    $('.sectionMoveB').click(function() {
-        $('html,body').animate({ scrollTop: 1030 }, 700);
-    });
-    $('.sectionMoveA').click(function() {
-        $('html,body').animate({ scrollTop: 420 }, 700);
-    });
+    
 
     /* click hamburger open-menu*/
     $('.fa-bars').on('click', function(e) {
