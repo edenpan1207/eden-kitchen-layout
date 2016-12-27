@@ -245,6 +245,7 @@ img {
 /* content second */
 .content-second {
   background: #3D1101;
+  overflow: hidden;
 }
 .content-second img {
   width: 53%;
