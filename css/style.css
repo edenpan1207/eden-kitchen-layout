@@ -248,7 +248,7 @@ img {
 }
 .content-second img {
   width: 53%;
-  height: 474px;
+  height: 452px;
   float: left;
   padding: 0 3%;
 }
@@ -266,8 +266,9 @@ img {
 /*RWD:768px*/
 @media(max-width:768px){
   .content-second img {
-  padding-left: 1%;
-  padding-bottom: 25px;
+    height: 412px;
+    padding-left: 1%;
+   
   }
   .article {
   margin-left: 52%;
