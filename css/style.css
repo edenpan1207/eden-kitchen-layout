@@ -251,7 +251,7 @@ img {
   width: 53%;
   height: 474px;
   float: left;
-  padding: 0 3%;
+  padding: 0 3% 22px 3%;
 }
 .article {
   padding: 51px 0;
@@ -268,7 +268,7 @@ img {
 @media(max-width:768px){
   .content-second img {
   padding-left: 1%;
-  padding-bottom: 45px;
+  padding-bottom: 62px;
   }
   .article {
   margin-left: 52%;
