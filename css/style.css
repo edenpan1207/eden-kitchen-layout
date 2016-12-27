@@ -63,7 +63,7 @@ img {
     padding: 0 0 50px 0;
     background-image: url(../images/header_desktop.png);
     background-repeat: no-repeat;
-    background-size: 100% 70%;
+    background-size: 100% 75%;
     background-attachment: fixed;
     clear: both;
 }
@@ -248,7 +248,7 @@ img {
 }
 .content-second img {
   width: 53%;
-  height: 452px;
+  height: 474px;
   float: left;
   padding: 0 3%;
 }
