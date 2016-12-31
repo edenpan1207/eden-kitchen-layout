@@ -161,13 +161,13 @@ img {
 }
 
 .section-move:hover {
-  color: gray;
-  border: 1px solid #f7465b;
+  color: #C32E37;
+  background-color: gray;
   transition: all 0.5s;
 }
 
 .section-move:active {
-  border: 5px solid #f7465b;
+  background-color: #483F3F;
 }
 
 .fa-bars {
