@@ -1,0 +1,31 @@
+$bgcolor: #D5D2D2;
+
+@mixin topmenu-h1 {
+    font-family: cursive;
+    color: white;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 3%;
+    cursor: pointer;
+}
+
+@mixin button {
+  padding: 6px 15px;
+  color: white;
+  border-radius:2px;
+  position: absolute;
+  bottom: -40px;
+  box-shadow: 0 5px 10px gray;
+  cursor: pointer;
+}
+
+@mixin button-active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 10px gray;
+}
+
+@mixin button-lphone {
+  padding: 8px 20px;
+  bottom: -40px;
+}

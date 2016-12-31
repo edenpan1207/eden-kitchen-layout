@@ -1,23 +1,23 @@
 $(document).ready(function() {
 
     /* the button of scroll show and hide by scrollTop */
-    $('.scrollButton').hide(300);
+    $('.scroll-button').hide(300);
     $(window).scroll(function() {
         if ($(document).scrollTop() > '300') {
-            $('.scrollButton').show(300);
+            $('.scroll-button').show(300);
         } else {
-            $('.scrollButton').hide(300);
+            $('.scroll-button').hide(300);
         }
     });
 
     /* scroll to top */
-    $('.scrollButton a').click(function(event) {
+    $('.scroll-button a').click(function(event) {
         event.preventDefault();
         $('html,body').animate({ scrollTop: 0 }, 700);
     });
 
-    /* sectionMove  is scroll move to target */
-    $('.sectionMove').click(function(event) {
+    /* section-move  is scroll move to target */
+    $('.section-move').click(function(event) {
         event.preventDefault();
         var connect = $(this).attr('href');
         var position = $(connect).offset().top;

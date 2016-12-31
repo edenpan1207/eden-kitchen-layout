@@ -1,0 +1,293 @@
+/*------------------------------------
+    $CONTENTS
+------------------------------------*/
+
+.content {
+    max-width: 100%;
+}
+
+/* content first */
+
+.content-first {
+    background-color: $bgcolor;
+
+    h3 {
+        font-size: 24px;
+        text-align: center;
+        padding-top: 30px;
+        line-height: 1.2em;
+    }
+
+    hr {
+        width: 40%;
+    }
+}
+
+
+/* content-first's ul class */
+
+.factor-list {
+    margin: 0 auto;
+
+    li {
+        max-width: 33.3333%;
+        float: left;
+        padding: 20px 2%;
+
+        h4 {
+            margin: 10px 15%;
+            text-align: center;
+        }
+
+        @include l-phone {
+            float: none;
+            max-width: 100%;
+            padding: 10px 0;
+        }
+
+        img {
+            border-radius: 50%;
+            padding: 10px 50px;
+            @include l-phone {
+                padding: 20px 30%;
+            }
+        }
+
+        p {
+            margin: 10px 5%;
+        }
+    }
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/* content second */
+
+.content-second {
+    background-color: #3D1101;
+    img {
+        width: 53%;
+        height: 452px;
+        float: left;
+        padding: 0 3%;
+
+        @include ipad {
+            height: 412px;
+            padding-left: 1%;
+        }
+
+        @include l-phone {
+            height: auto;
+            width: 99%;
+            float: none;
+            margin-left: 1%;
+            padding-bottom: 0;
+        }
+    }
+}
+
+
+/* after content-second img */
+
+.article {
+    padding: 51px 0;
+    margin-left: 52%;
+    margin-right: 3%;
+    line-height: 1.4em;
+    color: white;
+
+    h4 {
+        margin-bottom: 20px;
+    }
+
+    @include ipad {
+        margin-left: 52%;
+        margin-right: 1%;
+        padding: 2% 0;
+        line-height: 1.2em;
+    }
+
+    @include l-phone {
+        margin: 0 3%;
+        padding: 30px 0;
+    }
+}
+
+
+/* content third */
+
+.content-third {
+    background-color: $bgcolor;
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+
+/* .content-third's ul class */
+
+.menu-person {
+    margin: 20px 2%;
+
+    li {
+        max-width: 30.3333%;
+        float: left;
+        margin: 20px 1%;
+
+        p {
+            padding-left: 80px;
+        }
+
+        @include l-phone {
+            max-width: 90%;
+            float: none;
+            margin: 0 5%;
+            margin-bottom: 80px;
+            margin-top: 50px;
+        }
+    }
+}
+
+
+/* .content-third's ul li's person content */
+
+.top-person img {
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+/* .content-third's ul li's person footer */
+
+.foot-person {
+    float: right;
+    margin-top: 20px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/* content forth */
+
+.content-forth {
+    background: #F4F3F3;
+    padding-top: 50px;
+    padding-bottom: 60px;
+
+    h3 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: bold;
+        line-height: 1.3em;
+    }
+}
+
+
+/* .content-forth's information section */
+
+.order {
+    margin: 20px 1%;
+    position: relative;
+
+    img {
+        width: 45%;
+        height: 395px;
+        float: left;
+        margin-left: 3%;
+
+        @include l-phone {
+            width: 97%;
+            height: auto;
+            float: none;
+            margin-left: 1%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+/* form class */
+
+.geo {
+    line-height: 2em;
+    margin-left: 52%;
+    margin-right: 2%;
+
+    input[type='text'] {
+        width: 100%;
+        height: 30px;
+        margin-bottom: 8px;
+        text-indent: 10px;
+
+        @include l-phone {
+            height: 40px;
+            margin-bottom: 10px;
+            border: 2px solid gray;
+        }
+    }
+
+    @include l-phone {
+        max-width: 100%;
+        margin-left: 1%;
+    }
+}
+
+
+/* form's input radio */
+
+#diet1 {
+    margin-right: 40px;
+}
+
+
+/* form's button */
+
+#button-cancel {
+
+    @include button 
+        background: gray;
+        border: 1px solid gray;
+        right: 100px;
+
+    &:hover {
+        background: #434343;
+        border: 1px solid #434343;
+    }
+    &:active {
+        @include button-active
+    }
+    @include l-phone {
+        @include button-lphone right: 85px;
+    }
+}
+
+#button-submit {
+    @include button 
+        background: orange;
+        border: 1px solid orange;
+        right: 30px;
+
+    &:hover {
+        background: #C27D1A;
+        border: 1px solid #C27D1A;
+    }
+
+    &:active {
+        @include button-active
+    }
+    
+    @include l-phone {
+        @include button-lphone right: 8px;
+    }
+}

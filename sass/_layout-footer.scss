@@ -1,0 +1,106 @@
+/*------------------------------------
+    $FOOTER
+------------------------------------*/
+
+.footer {
+    background-color: $bgcolor;
+    padding-top: 2%;
+    padding-bottom: 17%;
+
+    @include ipad {
+        padding-bottom: 150px;
+    }
+
+    @include s-phone {
+        padding-bottom: 180px;
+    }
+}
+
+
+/* footer's ul class */
+
+.menu-inform {
+    width: 60%;
+    float: left;
+    margin-left: 3%;
+    margin-top: 3%;
+    line-height: 1.2em;
+
+    > li {
+        float: left;
+        width: 40%;
+        margin-right: 3%;
+
+        h5 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            font-size: 24px;
+
+            > li {
+            font-size: 16px;
+            }
+            }
+
+        @include ipad {
+            float: none;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+    
+    @include ipad {
+        width: 90%;
+        float: none;
+    }
+}
+
+.logo-bottom {
+    margin-top: 3%;
+    margin-right: 3%;
+    float: right;
+
+    a {
+        text-decoration: none;
+        display: block;
+        font-weight: bold;
+        font-size: 45px;
+        color: brown;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* logo-bottom's ul class */
+
+.menu-icon {
+    float: right;
+
+    li {
+        float: left;
+        border-left: 10px solid #D5D2D2;
+        margin-right: 5px;
+
+        img {
+            border-radius: 5px;
+        }
+    }
+}
+
+.scroll-button {
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    
+    &:hover {
+        border-radius: 100%;
+        box-shadow: 0px 8px 12px gray;
+    }
+    &:active {
+        transform: translateY(6px);
+        box-shadow: 0px 2px 12px gray;
+    }
+}

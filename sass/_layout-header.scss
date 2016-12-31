@@ -1,0 +1,154 @@
+/*------------------------------------
+    $HEADER
+------------------------------------*/
+
+.wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(../images/header_desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100% 75%;
+    background-attachment: fixed;
+
+    padding-bottom: 50px;
+    clear: both;
+
+    @include ipad {
+        background-attachment: initial;
+        background-size: 100% 100%;
+    }
+
+    @include l-phone {
+        background-image: url(../images/header_mobile.png);
+    }
+}
+
+.topmenu {
+    background-color: black;
+    
+    height: 56px;
+    position: relative;
+    box-shadow: 2px 0 5px white;
+
+    h1 {
+        @include topmenu-h1
+    }
+
+    ul {
+        float: right;
+
+        @include l-phone {
+            max-height: 0;
+            overflow: hidden;
+            z-index: 9;
+            transition: max-height 1.5s;
+            position: absolute;
+            margin-top: 1px;
+            top: 57px;
+            right: 0;
+            left: 0;
+            background: #73655F;
+        }
+        li {
+            float: left;
+
+            @include l-phone {
+                float: none;
+                border-bottom: 2px solid black;
+            }
+        }
+    }
+}
+
+/* rewrite 568px rwd for addClass */
+
+@include l-phone {
+    .open-menu {
+        .topmenu {
+            ul {
+                max-height: 200px;
+            }
+        }
+    }
+}
+
+
+/* .topmenu ul li => a */
+
+.section-move {
+    text-decoration: none;
+    display: block;
+    padding: 20px 40px;
+    color: white;
+
+    &:hover {
+        color: gray;
+        border: 1px solid #f7465b;
+        transition: all 0.5s;
+    }
+
+    &:active {
+        border: 5px solid #f7465b;
+    }
+}
+
+.fa-bars {
+    display: none;
+
+    @include l-phone {
+        display: block;
+        float: right;
+        margin-top: 5%;
+        margin-right: 8%;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+
+/* big picture */
+
+.screen {
+    width: 60%;
+    padding: 2em;
+    background: rgba(0, 0, 0, 0.35);
+    margin: 80px auto;
+    text-align: center;
+    clear: both;
+
+    @include m-phone {
+        width: 90%;
+        padding: 1.5em 0;
+    }
+
+    h2 {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 1em;
+
+        @include m-phone {
+            font-size: 36px;
+        }
+
+        span {
+
+            @include m-phone {
+                display: block;
+            }
+        }
+    }
+
+    p {
+        color: #fff;
+        line-height: 1.5em;
+    }
+}
+
+.fa-cutlery {
+    margin-right: 5px;
+    margin-left: 5px;
+}
